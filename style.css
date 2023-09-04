@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+.navigation-bar {
+    background-color: #333;
+  }
+  
+.hTitel{
+    font-size: 30px;
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.page{
+    display: flex;
+    flex-grow: 1;
+}
+
+.taksList{
+    background-color: rgb(236, 235, 232);
+    min-height: 300px;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    border: 3px solid #333;
+    border-radius: 1em;
+    margin: 2px 2px 15px 2px;
+}
+
+.inputForm{
+    flex: 1;
+    height: 130px;
+    background-color: rgb(236, 235, 232);
+    border: 3px solid #333;
+    border-radius: 1em;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    margin: 2px 2px 15px 2px;
+}
+
+.todo-item{
+    display: flex;
+    min-width: 54em;
+    margin: 1em;
+    padding: .5em;
+    border-radius: 20px;
+    background-color: #333;
+}
+
+.task{
+    display: flex;
+    font-size: 2.3em;
+    text-align: left;
+    word-wrap: break-word;
+    color: #fff;
+    padding: 5px;
+}
+
+.deleteButton{
+    background-color: red;
+    color: white;
+    font-size: 1em;
+    padding: 0.75em;
+    border-radius: 0.75em;
+    border: none;
+    margin: .5em;
+    width: 70px;
+    max-height: 50px;
+    margin-left: auto;
+}
+
+.deleteButton:hover{
+    background-color: rgb(180, 27, 27);
+}
+
+#todo-input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+#input-button{
+    width: 50%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#input-button:hover{
+    background-color: rgb(38, 116, 56);
+}
+
+.list-head{
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing:.1rem;
+    margin-top: 0%;
+    margin-bottom: 1%;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-title {
+    font-size: 20px;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+  }
+
+
+  /* Small screens */
+@media screen and (max-width: 768px) {
+    .page{
+        flex-direction: column;
+    }
+    .hTitel {
+      font-size: 24px;
+    }
+  
+    .todo-item {
+      min-width: auto;
+      flex-direction: column;
+    }
+    
+    .list-head {
+      font-size: 24px;
+    }
+  }
+  
+  /* Medium screens */
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .hTitel {
+      font-size: 28px;
+    }
+  
+    .todo-item {
+      min-width: 40em;
+    }
+  }
+  
+  /* Large screens */
+  @media screen and (min-width: 1025px) {
+    .hTitel {
+      font-size: 30px;
+    }
+  
+    .todo-item {
+      min-width: 54em;
+    }
+  }
